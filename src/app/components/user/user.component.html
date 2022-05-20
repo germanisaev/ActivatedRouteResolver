@@ -1,0 +1,14 @@
+<ul class="list">
+    <li *ngFor="let user of Users">
+        <div class="card mb-2">
+            <div class="card-body">
+                <p>{{user.id}}</p>
+                <p>{{user.name}}</p>
+                <p>{{user.username}}</p>
+                <p>{{user.email}}</p>
+                <p>{{user.address | json}}</p>
+                <p>{{user.company | json}}</p>
+            </div>
+        </div>
+    </li>
+</ul>
